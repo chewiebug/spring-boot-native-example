@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="07df1558-60a6-42ea-a904-7c3ca1fca787" activeEnvironment="Default" name="spring-boot-native-example" resourceRoot="" soapui-version="5.7.0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.LoadTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Print Report Statistics" value="false"/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Report to Generate" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="LoadTest" value="&lt;all>"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="ThreadCount" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="E:\swdevelopment\SoapUI\bin\"/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Limit" value=""/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="7ab0869a-35b0-4e5f-b502-58657782f808" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8081" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:8081</con:endpoint></con:endpoints><con:resource name="3212" path="/partners/1111" id="fa5a45af-06de-406f-b06a-793ccb155a5a"><con:settings/><con:parameters/><con:method name="GET Request 1" id="c76ca187-fb19-4710-be64-8cc420d0095f" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://localhost/partners/3212">ns:Response</con:element></con:representation><con:request name="dummy1" id="5039637b-b3fc-45f4-b89c-0d2e8cbd8d57" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8081</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="partners2" path="/partners/2222" id="fa5a45af-06de-406f-b06a-793ccb155a5a"><con:settings/><con:parameters/><con:method name="GET Request 2" id="8fb9291b-01db-49ac-a012-160067ca517a" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="b1686d21-4de0-4ee9-96ee-c453be8a8a6f" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8081</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="2773b5c8-307c-41e4-8e94-bc54bfafe12a" name="TestSuite 1"><con:settings/><con:runType>PARALLELL</con:runType><con:testCase id="afcbf1ae-2cdb-4a9c-9a28-e876495837a5" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GET Request 1" id="28e39865-76a8-4267-b502-ff6c1570a1f0"><con:settings/><con:config service="http://localhost:8081" methodName="GET Request 1" resourcePath="/partners/1111" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET Request 1" id="4dffd805-c2c4-4fbb-971b-a46436dac864" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8081</con:endpoint><con:request/><con:originalUri>http://localhost/partners/3212</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET Request 2" id="d15e1c7b-45bc-43a8-8f46-b137d64a749f"><con:settings/><con:config service="http://localhost:8081" resourcePath="/partners/2222" methodName="GET Request 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET Request 2" id="b1686d21-4de0-4ee9-96ee-c453be8a8a6f" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8081</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:loadTest id="9b373404-5264-4d27-a34f-9b6cb508b934" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>10</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:testCase id="640a18f9-e311-4833-8f1c-3c3db9bad736" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 2" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="12498209-b8f5-4d48-886c-e4cebd9c4c38"><con:settings/><con:config service="http://localhost:8081" resourcePath="/partners/2222" methodName="GET Request 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="b1686d21-4de0-4ee9-96ee-c453be8a8a6f" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8081</con:endpoint><con:request/><con:originalUri>http://localhost/partners/2222</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="39db6d8f-686c-42aa-ba92-d8dd9bee1703" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Copy of TestCase 2" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="089991e8-551a-43f0-8275-af8be3e68569"><con:settings/><con:config service="http://localhost:8081" resourcePath="/partners/2222" methodName="GET Request 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="b1686d21-4de0-4ee9-96ee-c453be8a8a6f" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8081</con:endpoint><con:request/><con:originalUri>http://localhost/partners/2222</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8691a99d-893f-4c91-ab11-aff5e49a118e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Copy of TestCase 1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GET Request 1" id="63df2c25-d1ae-4274-8627-1a4c91b8befc"><con:settings/><con:config service="http://localhost:8081" methodName="GET Request 1" resourcePath="/partners/1111" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET Request 1" id="4dffd805-c2c4-4fbb-971b-a46436dac864" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8081</con:endpoint><con:request/><con:originalUri>http://localhost/partners/3212</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
