@@ -9,12 +9,12 @@ environment:
 
 empty spring boot initializr project (modules: spring-boot-starter, spring-native)
                        standard java; native (tests skipped)
-build time             < 3s         ; (spring-boot:build-image) 2 Min 30s
+build time             < 3s         ; (spring-boot:build-image) 2 Min 30s (image size: ca. 50MB)
 startup time           1.786s       ; 0.013s
 
 spring boot initializr project (modules: spring-boot-starter-web, spring-native)
                        standard java; native
-build time             736m         ; (spring-boot:build-image) 4 Min 02s (image size: ca. 50MB)
+build time             736m         ; (spring-boot:build-image) 4 Min 02s (image size: ca. 90MB)
 startup time           < 4s         ; 0.055s
 response times (1st)   70 - 80ms    ; 1ms
 response times (later) 1 - 20ms     ; 1ms
