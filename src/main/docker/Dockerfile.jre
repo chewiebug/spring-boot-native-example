@@ -1,0 +1,8 @@
+## Stage 1 : build with maven builder image with native capabilities
+FROM registry.access.redhat.com/ubi8/openjdk-11-runtime
+
+COPY *.jar /deployments/
+
+EXPOSE 8081
+
+CMD java -jar /deployments/spring-boot-native-example-0.0.2-SNAPSHOT.jar
