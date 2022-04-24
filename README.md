@@ -23,6 +23,10 @@ response times (later) 1 - 20ms     ; 1ms
 - first build with spring-boot:build-image usually crashed Docker Desktop for Windwos (out of memory)
   - second build usually was ok -> because of caching of intermediate image layers?
 
+## minimal vm to run tests against (docker file: src/main/docker/Dockerfile.jvm):
+- docker run --rm -it -p 8081:8081 --memory=70M --cpus=0.093 --env JAVA_MAX_MEM_RATIO=35 --env JAVA_INITIAL_MEM_RATIO=20 --env GC_MAX_METASPACE_SIZE=35 --env GC_CONTAINER_OPTIONS=-XX:+ExitOnOutOfMemoryError --env JAVA_OPTS_APPEND=-Xlog:gc*=info,safepoint,os+cpu:file=/home/jboss/gc.log:tags,time,uptime,level --mount type=bind,src=$pwd/target,dst=/home/jboss/ chewiebug/spring-boot-jvm
+- needs 60s test run, because of lengthy initialisation of the first requests
+
 # Getting Started
 
 ### Reference Documentation

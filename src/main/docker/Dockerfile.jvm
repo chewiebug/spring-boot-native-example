@@ -1,0 +1,17 @@
+## Precondition: ./mvnw package has been called before this docker build is started
+# Then, build the image with:
+#
+# docker build -f src/main/docker/Dockerfile.jvm -t chewiebug/spring-boot-jvm .
+#
+# Then run the container using:
+#
+# docker run -i --rm -p 8081:8081 chewiebug/spring-boot-jvm
+FROM registry.access.redhat.com/ubi8/openjdk-11:1.11
+
+COPY --chown=185 target/*.jar /deployments/spring-boot-jvm.jar
+
+EXPOSE 8081
+USER 185
+
+ENV AB_JOLOKIA_OFF=""
+ENV JAVA_APP_JAR="/deployments/spring-boot-jvm.jar"
